@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    type:   0=Activity;    1=Fragment; 2=web  (默认为0)
+-->
+<!-- App首面结构 -->
+<main name="首页" className="MainActivity" id="ActivityMain">
+
+    <pages name="新闻" id="FragmentHome" type="1">
+        <page name="新闻组" className="ArticleListMoreActivity" id="ActivityArticleListMore"/>
+        <page name="图册" className="ImageShowActivity" id="ActivityImageShow"/>
+        <page name="首页广告" id="WebAdsHome" type="2"/>
+        <page name="新闻" id="WebNews" type="2"/>
+    </pages>
+
+    <pages name="行动" id="FragmentService" type="1">
+        <page name="行动广告" id="WebAdsService" type="2"/>
+        <page name="预约" className="AppointmentMainActivity" id="ActivityAppointmentMain"/>
+        <page name="地图" className="BloodMapActivity" id="ActivityBloodMap"/>
+        <page name="预填表" className="NoteMainActivity" id="ActivityNoteMain"/>
+        <page name="血检" className="QueryBloodMainActivity" id="ActivityQueryBloodMain"/>
+
+        <page name="健康自测" id="WebHealthy" type="2"/>
+        <page name="间隔期查询" className="IntervalActivity" id="ActivityInterval"/>
+        <page name="常见问题" className="ServiceNomalQuesetionsActivity"
+              id="ActivityServiceNomalQuesetions"/>
+        <page name="报销指引" id="WebMoneyClaim" type="2"/>
+    </pages>
+
+    <pages name="发现" id="FragmentFind" type="1">
+        <page name="今日留影" className="LiuyingqiangActivity" id="ActivityLiuyingqiang"/>
+        <page name="活动广场" className="SquareMainActivity" id="ActivitySquareMain"/>
+        <page name="热门话题" className="HotTopicActivity" id="ActivityHotTopic"/>
+    </pages>
+
+    <pages name="我" id="FragmentMy" type="1">
+        <page name="个人中心" className="MydataActivity" id="ActivityMydata"/>
+        <page name="积分" className="IntegralActivity" id="ActivityIntegral"/>
+        <page name="纪念券" id="WebTicketMain" type="2"/>
+        <page name="预约回执" className="AppointmentReceiptActivity" id="ActivityAppointmentReceipt"/>
+        <page name="设置" className="SettingActivity" id="ActivitySetting"/>
+    </pages>
+
+</main>

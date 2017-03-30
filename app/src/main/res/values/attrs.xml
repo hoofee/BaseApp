@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="centered" format="boolean" />
+        <attr name="fadeOut" format="integer" />
+        <attr name="inactiveType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="activeType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="circleSeparation" format="dimension" />
+        <attr name="activeRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressText">
+        <attr name="background_color" format="color" />
+        <attr name="progress_color" format="color" />
+        <attr name="round_width" format="dimension"></attr>
+        <attr name="text_color" format="color" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_visible" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PublishedPhotosLayout">
+        <attr name="max_count" format="integer" />
+    </declare-styleable>
+
+    <!-- 排行榜显示名字或图片控件 -->
+    <declare-styleable name="imageOrString">
+        <attr name="imageUrl" format="string" />
+        <attr name="userName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TipsControl">
+        <attr name="tipsTitle" format="reference" />
+        <attr name="tipsSubTitle" format="reference" />
+        <attr name="tipsPhoto" format="reference" />
+        <attr name="tipsButton" format="reference" />
+    </declare-styleable>
+
+    <!-- 献血足迹中路的自定义控件 -->
+    <declare-styleable name="CircleRoadView">
+        <!-- 圆的半径，圆环的宽，圆环的颜色，小路的宽度 -->
+        <attr name="CircleRadius" format="dimension" />
+        <attr name="CircleWidth" format="dimension" />
+        <attr name="CircleColor" format="color" />
+        <attr name="RoadWidth" format="dimension" />
+        <!-- 是否右边 不写默认左边-->
+        <attr name="isShowRight" format="boolean" />
+    </declare-styleable>
+
+    <attr name="item_count" format="integer"></attr>
+
+    <!-- 自定义viewpager indicator -->
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" />
+    </declare-styleable>
+
+    <declare-styleable name="OperationLineLayout">
+        <attr name="text" format="string" />
+        <attr name="value" format="string" />
+        <attr name="image" format="integer" />
+        <attr name="rightIconVisible" format="boolean" />
+        <attr name="hasSeparator" format="boolean" />
+    </declare-styleable>
+</resources>

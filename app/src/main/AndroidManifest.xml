@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.hoofee.everything">
+
+    <!-- **********************************权限********************************** -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_release_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- **********************************广播********************************** -->
+        <!-- 注册网络变更的静态广播 -->
+        <receiver android:name=".main.broadcast.NetConnectReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- **********************************服务********************************** -->
+
+
+        <!-- ********************************Activity******************************** -->
+        <activity
+            android:name=".main.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.activity.TestActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <!-- **********************************第三方********************************** -->
+        <!-- 友盟相关配置 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_APPKEY}"/>
+        <meta-data
+            android:name="UMENG_CHANNEL_NAME"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+
+        <!-- 百度地图的api_key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="${BAIDU_APPKEY}"/>
+        <meta-data
+            android:name="com.baidu.lbsapi.mcode"
+            android:value="${BAIDU_MCODE}"/>
+
+        <!-- QQ开发者配置 -->
+        <meta-data
+            android:name="QQ_APPKEY"
+            android:value="${QQ_APPKEY}"/>
+        <meta-data
+            android:name="QQ_APPKEY_VALUE"
+            android:value="${QQ_APPKEY_VALUE}"/>
+
+        <!-- 微信开发者配置 -->
+        <meta-data
+            android:name="WEIXIN_APPKEY"
+            android:value="${WEIXIN_APPKEY}"/>
+        <meta-data
+            android:name="WEIXIN_APPKEY_VALUE"
+            android:value="${WEIXIN_APPKEY_VALUE}"/>
+
+        <!-- 新浪开发者配置 -->
+        <meta-data
+            android:name="SINA_WEIBO_APPKEY"
+            android:value="${SINA_WEIBO_APPKEY}"/>
+        <meta-data
+            android:name="SINA_WEIBO_APPKEY_VALUE"
+            android:value="${SINA_WEIBO_APPKEY_VALUE}"/>
+
+    </application>
+</manifest>

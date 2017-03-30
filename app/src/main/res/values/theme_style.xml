@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/theme_color</item>
+        <item name="colorPrimaryDark">@color/theme_color</item>
+        <item name="colorAccent">@color/theme_color</item>
+        <!--textview-->
+        <item name="android:textViewStyle">@style/ThemeTextView</item>
+        <!--ListView默认分割线-->
+        <item name="android:listDivider">@android:drawable/divider_horizontal_bright</item>
+
+        <!-- 单选按钮样式 -->
+        <item name="android:radioButtonStyle">@style/ThemeRadioButton</item>
+
+        <!-- 复选框按钮样式 -->
+        <item name="checkboxStyle">@style/ThemeCheckBox</item>
+
+        <!-- 编辑框样式 -->
+        <item name="android:editTextStyle">@style/ThemeEditText</item>
+        <item name="editTextBackground">@null</item>
+        <item name="editTextColor">@color/text_color</item>
+        <item name="android:textColorHint">@color/text_color_hint</item>
+
+        <!-- Spinner样式 -->
+        <item name="spinnerStyle">@style/ThemeSpinner</item>
+        <item name="android:spinnerItemStyle">@style/ThemeSpinnerItem</item>
+        <item name="android:dropDownListViewStyle">@style/ThemeDropdownListView</item>
+        <!-- 在Spinner按住下拉的样式 -->
+        <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
+        <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
+
+        <!-- Button样式 -->
+        <item name="buttonStyle">@style/ThemeButton</item>
+        <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
+        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button
+        </item>
+        <item name="imageButtonStyle">@style/Widget.AppCompat.ImageButton</item>
+        <item name="buttonBarStyle">@style/Widget.AppCompat.ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/Widget.AppCompat.Button.ButtonBar.AlertDialog
+        </item>
+        <item name="buttonBarPositiveButtonStyle">?attr/buttonBarButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">?attr/buttonBarButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">?attr/buttonBarButtonStyle</item>
+
+        <!-- PopPupWndow样式 -->
+        <item name="popupMenuStyle">@style/ThemePopupWindow</item>
+        <item name="textAppearanceLargePopupMenu">
+            @style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large
+        </item>
+        <item name="textAppearanceSmallPopupMenu">
+            @style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small
+        </item>
+        <item name="listPopupWindowStyle">@style/Widget.AppCompat.ListPopupWindow</item>
+        <item name="dropDownListViewStyle">?android:attr/dropDownListViewStyle</item>
+    </style>
+
+    <!-- 启动页样式 -->
+    <style name="Theme.AppCompat.Translucent" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <!-- ==================================基本控件的样式====================================== -->
+    <!-- textView 基本样式 -->
+    <style name="ThemeTextView">
+        <item name="android:textSize">@dimen/x30</item>
+    </style>
+    <!-- 单选按钮样式 -->
+    <style name="ThemeRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/theme_radio_button</item>
+        <item name="android:textSize">@dimen/x30</item>
+    </style>
+    <!-- 编辑框 -->
+    <style name="ThemeEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:editTextBackground">@null</item>
+        <item name="android:textSize">@dimen/x30</item>
+    </style>
+    <!-- 复选框样式 -->
+    <style name="ThemeCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">?android:attr/listChoiceIndicatorMultiple</item>
+    </style>
+    <!-- 按钮的样式 -->
+    <style name="ThemeButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/theme_button_style</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceButton</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 下拉框样式 -->
+    <style name="ThemeSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/abc_spinner_mtrl_am_alpha</item>
+        <item name="android:popupBackground">@drawable/abc_popup_background_mtrl_mult</item>
+        <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="overlapAnchor">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ThemeSpinnerItem" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ThemeDropdownListView" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:divider">#e1e1e2</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- PopupWindow的样式 -->
+    <style name="ThemePopupWindow" parent="Widget.AppCompat.Light.PopupMenu">
+
+    </style>
+
+    <!-- dialog样式 -->
+    <style name="AppThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your theme here. -->
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:gravity">top</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- dialog背景样式 -->
+        <item name="android:windowBackground">@color/main_transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+</resources>

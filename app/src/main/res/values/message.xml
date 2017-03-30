@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 姓名 -->
+    <string name="tips_user_name">请填写真实姓名</string>
+    <string name="tips_error_user_name">姓名格式错误</string>
+    <string name="tips_null_user_name">姓名不能为空</string>
+
+    <!-- 昵称 -->
+    <string name="tips_user_alias">请填写昵称</string>
+    <string name="tips_null_user_alias">昵称不能为空</string>
+    <string name="tips_error_user_alias">用户昵称格式错误</string>
+    <string name="tips_error_alias">昵称格式错误</string>
+
+    <!-- 验证码 -->
+    <string name="tips_verify_code">请输入验证码</string>
+    <string name="tips_null_verify">验证码不能为空</string>
+    <string name="tips_error_verify">验证码格式错误</string>
+
+    <!-- 密码 -->
+    <string name="tips_password">请输入密码</string>
+    <string name="tips_null_password">密码不能为空</string>
+    <string name="tips_error_password">密码应为6-20位字母符号组合</string>
+    <string name="tips_error_repassword">两次输入密码不一致</string>
+
+    <!-- 性别 -->
+    <string name="tips_null_user_sex">性别不能为空</string>
+
+    <!-- 身份证 -->
+    <string name="tips_user_idcard">请填写身份证号码</string>
+    <string name="tips_null_idcard">身份证号不能为空</string>
+    <string name="tips_error_idcard">身份证号格式错误</string>
+
+    <!-- 手机号 -->
+    <string name="tips_cellphone_number">请输入手机号</string>
+    <string name="tips_null_cellphone_number">手机号码不能为空</string>
+    <string name="tips_error_cellphone_number">手机号码格式错误</string>
+
+    <string name="tips_cellphone_number_old">请输入原手机号</string>
+    <string name="tips_cellphone_number_new">请输入新手机号</string>
+
+    <!-- 邮箱 -->
+    <string name="tips_email">请填写邮箱</string>
+    <string name="tips_null_email">邮箱不能为空</string>
+    <string name="tips_error_email">邮箱格式不正确</string>
+
+    <!-- 地区 -->
+    <string name="tips_adress">请选择您的住址</string>
+    <string name="tips_null_adress">住址不能为空</string>
+
+    <!-- 职业 -->
+    <string name="tips_job">请选择您的职业</string>
+    <string name="tips_null_job">职业不能为空</string>
+
+    <!-- 文化 -->
+    <string name="tips_education">请选择您的最高文化水平</string>
+    <string name="tips_null_education">文化程度不能为空</string>
+</resources>

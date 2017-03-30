@@ -1,0 +1,15 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+/autoadaptation/build
+.externalNativeBuild
+/blood-platform-widget/build
+/autoadaptation/autoadaptation.iml
+/build
+

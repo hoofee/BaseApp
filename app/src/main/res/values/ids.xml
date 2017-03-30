@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="top_statusbar" type="id">top_statusbar</item>
+    <item name="load_image_tag" type="id"/>
+</resources>

@@ -1,0 +1,1 @@
+include ':app', ':autoadaptation', ':share-login-platform-widget'

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="red">#ff0000</color>
+    <color name="gray">#aaaaaa</color>
+
+    <color name="theme_color">#3619ea</color>
+    <color name="main_bg_color">#F2F2F2</color>
+    <color name="text_color">#d2d2d2</color>
+    <color name="text_color_hint">#d2d2d2</color>
+    <color name="tips_color">#999999</color>
+    <color name="main_transparent">#00000000</color>
+</resources>

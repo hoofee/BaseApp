@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class=".TestBinding">
+
+        <variable
+            name="viewModel"
+            type="com.hoofee.everything.main.viewmodel.TestViewModel"/>
+
+        <variable
+            name="item"
+            type="com.hoofee.everything.main.model.TestModel"/>
+
+        <variable
+            name="index"
+            type="int"/>
+
+        <variable
+            name="activity"
+            type="com.hoofee.everything.main.activity.MainActivity"/>
+
+        <variable
+            name="fragment"
+            type="android.support.v4.app.Fragment"/>
+
+        <variable
+            name="flag"
+            type="String"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="@dimen/x200"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x200"
+            android:text="@{viewModel.obsTest}"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x20"
+            android:onClick="getArticleListClick"
+            android:text="获取新闻列表"/>
+    </LinearLayout>
+</layout>
